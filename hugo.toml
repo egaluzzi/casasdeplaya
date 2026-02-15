@@ -1,0 +1,47 @@
+baseURL = 'https://casasdeplaya.com/'
+title = 'Casas de Playa'
+defaultContentLanguage = 'es'
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[languages]
+  [languages.es]
+    languageCode = 'es'
+    languageName = 'Español'
+    weight = 1
+    title = 'Casas de Playa'
+    [languages.es.params]
+      description = 'Comunidad residencial frente al mar en La Pedrera, Rocha, Uruguay. Alquiler y venta de casas y terrenos.'
+
+  [languages.en]
+    languageCode = 'en'
+    languageName = 'English'
+    weight = 2
+    title = 'Casas de Playa'
+    [languages.en.params]
+      description = 'Beachfront gated community in La Pedrera, Rocha, Uruguay. Houses for rent and lots for sale.'
+
+  [languages.pt]
+    languageCode = 'pt'
+    languageName = 'Português'
+    weight = 3
+    title = 'Casas de Playa'
+    [languages.pt.params]
+      description = 'Condomínio fechado à beira-mar em La Pedrera, Rocha, Uruguai. Aluguel e venda de casas e terrenos.'
+
+[params]
+  author = 'Casas de Playa'
+  logo = '/images/logo.svg'
+  ogImage = '/images/og-image.jpg'
+
+[sitemap]
+  changefreq = 'monthly'
+  priority = 0.5
+
+[outputs]
+  home = ['HTML', 'RSS']

@@ -1,0 +1,30 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Casas de Playa</span>
+        <p class="footer-location">{{ i18n "footer_location" }}</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="{{ .Site.Home.RelPermalink }}">{{ i18n "nav_home" }}</a></li>
+          {{ with .Site.GetPage "/amenities" }}
+          <li><a href="{{ .RelPermalink }}">{{ i18n "nav_amenities" }}</a></li>
+          {{ end }}
+          {{ with .Site.GetPage "/sales" }}
+          <li><a href="{{ .RelPermalink }}">{{ i18n "nav_sales" }}</a></li>
+          {{ end }}
+          {{ with .Site.GetPage "/la-pedrera" }}
+          <li><a href="{{ .RelPermalink }}">{{ i18n "nav_lapedrera" }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:info@casasdeplaya.com" class="footer-email">info@casasdeplaya.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ now.Year }} Casas de Playa. {{ i18n "footer_rights" }}.</p>
+    </div>
+  </div>
+</footer>

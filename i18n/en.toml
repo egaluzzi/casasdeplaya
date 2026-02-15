@@ -1,0 +1,95 @@
+[nav_home]
+other = "Home"
+
+[nav_amenities]
+other = "Amenities"
+
+[nav_rent]
+other = "Rent"
+
+[nav_sales]
+other = "Sales"
+
+[nav_lapedrera]
+other = "La Pedrera"
+
+[hero_tagline]
+other = "Your beachfront retreat in La Pedrera, Uruguay"
+
+[rent_title]
+other = "Houses for Rent"
+
+[rent_subtitle]
+other = "Discover our beachfront houses available for rental"
+
+[amenities_title]
+other = "Amenities"
+
+[amenities_subtitle]
+other = "Everything you need for the ultimate beach experience"
+
+[sales_title]
+other = "Lots for Sale"
+
+[sales_subtitle]
+other = "Invest in your future by the sea"
+
+[lapedrera_title]
+other = "La Pedrera"
+
+[lapedrera_subtitle]
+other = "Discover everything La Pedrera has to offer"
+
+[bedrooms]
+other = "Bedrooms"
+
+[bathrooms]
+other = "Bathrooms"
+
+[guests]
+other = "Guests"
+
+[view_details]
+other = "View details"
+
+[contact_us]
+other = "Contact us"
+
+[lot]
+other = "Lot"
+
+[price]
+other = "Price"
+
+[area]
+other = "Area"
+
+[available]
+other = "Available"
+
+[footer_rights]
+other = "All rights reserved"
+
+[footer_location]
+other = "La Pedrera, Rocha, Uruguay"
+
+[restaurants]
+other = "Restaurants"
+
+[bakeries]
+other = "Bakeries"
+
+[supermarkets]
+other = "Supermarkets"
+
+[other_services]
+other = "Other Services"
+
+[sqm]
+other = "sqm"
+
+[learn_more]
+other = "Learn more"
+
+[back_to_top]
+other = "Back to top"

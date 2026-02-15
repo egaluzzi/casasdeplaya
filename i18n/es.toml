@@ -1,0 +1,95 @@
+[nav_home]
+other = "Inicio"
+
+[nav_amenities]
+other = "Amenidades"
+
+[nav_rent]
+other = "Alquiler"
+
+[nav_sales]
+other = "Ventas"
+
+[nav_lapedrera]
+other = "La Pedrera"
+
+[hero_tagline]
+other = "Tu refugio frente al mar en La Pedrera, Uruguay"
+
+[rent_title]
+other = "Casas en Alquiler"
+
+[rent_subtitle]
+other = "Descubrí nuestras casas disponibles para alquiler en la playa"
+
+[amenities_title]
+other = "Amenidades"
+
+[amenities_subtitle]
+other = "Todo lo que necesitás para disfrutar al máximo"
+
+[sales_title]
+other = "Terrenos en Venta"
+
+[sales_subtitle]
+other = "Invertí en tu futuro frente al mar"
+
+[lapedrera_title]
+other = "La Pedrera"
+
+[lapedrera_subtitle]
+other = "Descubrí todo lo que La Pedrera tiene para ofrecer"
+
+[bedrooms]
+other = "Dormitorios"
+
+[bathrooms]
+other = "Baños"
+
+[guests]
+other = "Huéspedes"
+
+[view_details]
+other = "Ver detalles"
+
+[contact_us]
+other = "Contactanos"
+
+[lot]
+other = "Lote"
+
+[price]
+other = "Precio"
+
+[area]
+other = "Superficie"
+
+[available]
+other = "Disponible"
+
+[footer_rights]
+other = "Todos los derechos reservados"
+
+[footer_location]
+other = "La Pedrera, Rocha, Uruguay"
+
+[restaurants]
+other = "Restaurantes"
+
+[bakeries]
+other = "Panaderías"
+
+[supermarkets]
+other = "Supermercados"
+
+[other_services]
+other = "Otros Servicios"
+
+[sqm]
+other = "m²"
+
+[learn_more]
+other = "Saber más"
+
+[back_to_top]
+other = "Volver arriba"

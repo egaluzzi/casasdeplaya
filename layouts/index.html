@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+<!-- Hero Carousel -->
+<section class="hero-carousel" id="hero-carousel">
+  <div class="carousel-container">
+    <div class="carousel-track">
+      {{ range .Params.carousel }}
+      <div class="carousel-slide">
+        <img src="{{ .image }}" alt="{{ .alt }}" loading="eager">
+      </div>
+      {{ end }}
+    </div>
+    <button class="carousel-btn carousel-btn-prev" aria-label="Previous">&#10094;</button>
+    <button class="carousel-btn carousel-btn-next" aria-label="Next">&#10095;</button>
+    <div class="carousel-dots">
+      {{ range $i, $slide := .Params.carousel }}
+      <span class="carousel-dot {{ if eq $i 0 }}active{{ end }}" data-index="{{ $i }}"></span>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Tagline -->
+<section class="tagline-section">
+  <div class="container">
+    <h1 class="tagline">{{ i18n "hero_tagline" }}</h1>
+  </div>
+</section>
+
+<!-- Rent Section -->
+<section class="rent-section" id="alquiler">
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ i18n "rent_title" }}</h2>
+      <p class="section-subtitle">{{ i18n "rent_subtitle" }}</p>
+    </div>
+    <div class="houses-grid">
+      {{ range .Params.houses }}
+      <div class="house-card">
+        <div class="house-card-image">
+          <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
+        </div>
+        <div class="house-card-body">
+          <h3>{{ .name }}</h3>
+          <p class="house-description">{{ .description }}</p>
+          <div class="house-features">
+            {{ if .bedrooms }}<span class="feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v11m0-4h18m0 4V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2"/><path d="M7 11V7h4v4m2 0V7h4v4"/></svg> {{ .bedrooms }} {{ i18n "bedrooms" }}</span>{{ end }}
+            {{ if .bathrooms }}<span class="feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6M6 12V5a2 2 0 0 1 2-2h1"/></svg> {{ .bathrooms }} {{ i18n "bathrooms" }}</span>{{ end }}
+            {{ if .guests }}<span class="feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> {{ .guests }} {{ i18n "guests" }}</span>{{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

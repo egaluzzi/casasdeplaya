@@ -1,0 +1,35 @@
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="{{ .Site.Home.RelPermalink }}" class="logo">
+      <span class="logo-text">Casas de Playa</span>
+    </a>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <ul class="nav-list">
+        {{ $currentPage := . }}
+        <li><a href="{{ .Site.Home.RelPermalink }}" class="{{ if .IsHome }}active{{ end }}">{{ i18n "nav_home" }}</a></li>
+        <li><a href="{{ .Site.Home.RelPermalink }}#alquiler" class="">{{ i18n "nav_rent" }}</a></li>
+        {{ with .Site.GetPage "/amenities" }}
+        <li><a href="{{ .RelPermalink }}" class="{{ if eq $currentPage.RelPermalink .RelPermalink }}active{{ end }}">{{ i18n "nav_amenities" }}</a></li>
+        {{ end }}
+        {{ with .Site.GetPage "/sales" }}
+        <li><a href="{{ .RelPermalink }}" class="{{ if eq $currentPage.RelPermalink .RelPermalink }}active{{ end }}">{{ i18n "nav_sales" }}</a></li>
+        {{ end }}
+        {{ with .Site.GetPage "/la-pedrera" }}
+        <li><a href="{{ .RelPermalink }}" class="{{ if eq $currentPage.RelPermalink .RelPermalink }}active{{ end }}">{{ i18n "nav_lapedrera" }}</a></li>
+        {{ end }}
+      </ul>
+      <div class="lang-switcher">
+        {{ $currentLang := .Language.Lang }}
+        {{ range .Translations }}
+        <a href="{{ .RelPermalink }}" class="lang-link" title="{{ .Language.LanguageName }}">{{ upper .Language.Lang }}</a>
+        {{ end }}
+        <span class="lang-link active">{{ upper .Language.Lang }}</span>
+      </div>
+    </nav>
+  </div>
+</header>

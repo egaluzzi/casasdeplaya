@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ i18n "amenities_title" }}</h1>
+    <p class="page-subtitle">{{ i18n "amenities_subtitle" }}</p>
+  </div>
+</section>
+
+<section class="amenities-section">
+  <div class="container">
+    {{ range $i, $amenity := .Params.amenities }}
+    <div class="amenity-row {{ if (modBool $i 2) }}amenity-row-reverse{{ end }}">
+      <div class="amenity-image">
+        <img src="{{ $amenity.image }}" alt="{{ $amenity.title }}" loading="lazy">
+      </div>
+      <div class="amenity-content">
+        <h2>{{ $amenity.title }}</h2>
+        <p>{{ $amenity.description }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

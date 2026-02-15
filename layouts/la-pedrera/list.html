@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ i18n "lapedrera_title" }}</h1>
+    <p class="page-subtitle">{{ i18n "lapedrera_subtitle" }}</p>
+  </div>
+</section>
+
+<section class="lapedrera-section">
+  <div class="container">
+
+    {{ if .Params.restaurants }}
+    <div class="lp-subsection">
+      <h2>{{ i18n "restaurants" }}</h2>
+      <div class="lp-grid">
+        {{ range .Params.restaurants }}
+        <div class="lp-card">
+          <div class="lp-card-image">
+            <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
+          </div>
+          <div class="lp-card-body">
+            <h3>{{ .name }}</h3>
+            <p>{{ .description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ if .Params.bakeries }}
+    <div class="lp-subsection">
+      <h2>{{ i18n "bakeries" }}</h2>
+      <div class="lp-grid">
+        {{ range .Params.bakeries }}
+        <div class="lp-card">
+          <div class="lp-card-image">
+            <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
+          </div>
+          <div class="lp-card-body">
+            <h3>{{ .name }}</h3>
+            <p>{{ .description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ if .Params.supermarkets }}
+    <div class="lp-subsection">
+      <h2>{{ i18n "supermarkets" }}</h2>
+      <div class="lp-grid">
+        {{ range .Params.supermarkets }}
+        <div class="lp-card">
+          <div class="lp-card-image">
+            <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
+          </div>
+          <div class="lp-card-body">
+            <h3>{{ .name }}</h3>
+            <p>{{ .description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ if .Params.other }}
+    <div class="lp-subsection">
+      <h2>{{ i18n "other_services" }}</h2>
+      <div class="lp-grid">
+        {{ range .Params.other }}
+        <div class="lp-card">
+          <div class="lp-card-image">
+            <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
+          </div>
+          <div class="lp-card-body">
+            <h3>{{ .name }}</h3>
+            <p>{{ .description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+
+{{ end }}
