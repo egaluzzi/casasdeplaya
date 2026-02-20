@@ -405,6 +405,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   height: 240px;
   overflow: hidden;
+  display: block;
 }
 
 .house-card-image img {
@@ -416,6 +417,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .house-card:hover .house-card-image img {
   transform: scale(1.05);
+}
+
+.house-more-info {
+  display: block;
+  text-align: center;
+  padding: 0.6rem var(--space-md);
+  background: var(--color-sand);
+  color: var(--color-ocean);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.house-more-info:hover {
+  background: var(--color-ocean);
+  color: var(--color-white);
 }
 
 .house-card-body {
@@ -453,6 +471,66 @@ h1, h2, h3, h4, h5, h6 {
 .feature svg {
   color: var(--color-ocean);
   flex-shrink: 0;
+}
+
+/* House card contact section */
+.house-contact {
+  padding-top: var(--space-md);
+  margin-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-host {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.6rem;
+}
+
+.contact-host svg {
+  color: var(--color-ocean);
+  flex-shrink: 0;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.contact-link svg {
+  flex-shrink: 0;
+}
+
+.contact-text {
+  transition: color var(--transition);
+}
+
+.whatsapp-link {
+  color: #25D366;
+}
+
+.whatsapp-link:hover {
+  color: #1da851;
+}
+
+.email-link {
+  color: var(--color-ocean);
+}
+
+.email-link:hover {
+  color: var(--color-ocean-dark);
 }
 
 /* --- Page Hero (inner pages) --- */
@@ -639,7 +717,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-.lp-subsection h2 {
+.lp-subsection h3 {
   font-size: 2rem;
   margin-bottom: var(--space-md);
   color: var(--color-ocean);

@@ -43,11 +43,17 @@ other = "Descubrí todo lo que La Pedrera tiene para ofrecer"
 [bedrooms]
 other = "Dormitorios"
 
+[beds]
+other = "Camas"
+
 [bathrooms]
 other = "Baños"
 
 [guests]
 other = "Huéspedes"
+
+[host]
+other = "Anfitrión"
 
 [view_details]
 other = "Ver detalles"
@@ -87,6 +93,9 @@ other = "Otros Servicios"
 
 [sqm]
 other = "m²"
+
+[more_info]
+other = "Más información y disponibilidad"
 
 [learn_more]
 other = "Saber más"

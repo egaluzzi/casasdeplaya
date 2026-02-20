@@ -10,18 +10,11 @@
     </button>
     <nav class="main-nav" id="main-nav">
       <ul class="nav-list">
-        {{ $currentPage := . }}
         <li><a href="{{ .Site.Home.RelPermalink }}" class="{{ if .IsHome }}active{{ end }}">{{ i18n "nav_home" }}</a></li>
-        <li><a href="{{ .Site.Home.RelPermalink }}#alquiler" class="">{{ i18n "nav_rent" }}</a></li>
-        {{ with .Site.GetPage "/amenities" }}
-        <li><a href="{{ .RelPermalink }}" class="{{ if eq $currentPage.RelPermalink .RelPermalink }}active{{ end }}">{{ i18n "nav_amenities" }}</a></li>
-        {{ end }}
-        {{ with .Site.GetPage "/sales" }}
-        <li><a href="{{ .RelPermalink }}" class="{{ if eq $currentPage.RelPermalink .RelPermalink }}active{{ end }}">{{ i18n "nav_sales" }}</a></li>
-        {{ end }}
-        {{ with .Site.GetPage "/la-pedrera" }}
-        <li><a href="{{ .RelPermalink }}" class="{{ if eq $currentPage.RelPermalink .RelPermalink }}active{{ end }}">{{ i18n "nav_lapedrera" }}</a></li>
-        {{ end }}
+        <li><a href="{{ .Site.Home.RelPermalink }}#alquiler">{{ i18n "nav_rent" }}</a></li>
+        <li><a href="{{ .Site.Home.RelPermalink }}#amenidades">{{ i18n "nav_amenities" }}</a></li>
+        <li><a href="{{ .Site.Home.RelPermalink }}#ventas">{{ i18n "nav_sales" }}</a></li>
+        <li><a href="{{ .Site.Home.RelPermalink }}#lapedrera">{{ i18n "nav_lapedrera" }}</a></li>
       </ul>
       <div class="lang-switcher">
         {{ $currentLang := .Language.Lang }}
