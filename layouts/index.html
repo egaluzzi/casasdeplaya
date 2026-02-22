@@ -101,31 +101,27 @@
       <p class="section-subtitle">{{ i18n "sales_subtitle" }}</p>
     </div>
 
-    <!-- Master Plan Image -->
-    {{ if .Params.masterplan_image }}
-    <div class="master-plan">
-      <img src="{{ .Params.masterplan_image }}" alt="Casas de Playa - Master Plan" loading="lazy">
-    </div>
-    {{ end }}
+    <div class="sales-layout">
+      <!-- Master Plan Image -->
+      <div class="master-plan">
+        <picture>
+          <source srcset="/images/planogeneral.webp" type="image/webp">
+          <img src="/images/planogeneral.jpg" alt="Casas de Playa - {{ i18n "sales_title" }}" loading="lazy">
+        </picture>
+      </div>
 
-    <!-- Individual Lots -->
-    <div class="lots-grid">
-      {{ range .Params.lots }}
-      <div class="lot-card">
-        <div class="lot-card-image">
-          <img src="{{ .image }}" alt="{{ i18n "lot" }} #{{ .number }}" loading="lazy">
-          <span class="lot-badge">{{ i18n "lot" }} #{{ .number }}</span>
-        </div>
-        <div class="lot-card-body">
-          <h3>{{ i18n "lot" }} #{{ .number }}</h3>
-          <p class="lot-description">{{ .description }}</p>
-          <div class="lot-details">
-            {{ if .area }}<span class="lot-detail"><strong>{{ i18n "area" }}:</strong> {{ .area }}</span>{{ end }}
+      <!-- Lots List -->
+      <div class="lots-list">
+        {{ range .Params.lots }}
+        <div class="lot-row">
+          <div class="lot-number">{{ i18n "lot" }} #{{ .number }}</div>
+          <div class="lot-info">
             <span class="lot-price">USD {{ .price }}</span>
+            {{ if .phone }}<a href="tel:{{ .phone }}" class="lot-phone">{{ .phone }}</a>{{ end }}
           </div>
         </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
   </div>
 </section>
@@ -144,11 +140,8 @@
       <div class="lp-grid">
         {{ range .Params.restaurants }}
         <div class="lp-card">
-          <div class="lp-card-image">
-            <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
-          </div>
           <div class="lp-card-body">
-            <h4>{{ .name }}</h4>
+            <h4>{{ if .website }}<a href="{{ .website }}" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</h4>
             <p>{{ .description }}</p>
           </div>
         </div>
@@ -163,11 +156,8 @@
       <div class="lp-grid">
         {{ range .Params.bakeries }}
         <div class="lp-card">
-          <div class="lp-card-image">
-            <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
-          </div>
           <div class="lp-card-body">
-            <h4>{{ .name }}</h4>
+            <h4>{{ if .website }}<a href="{{ .website }}" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</h4>
             <p>{{ .description }}</p>
           </div>
         </div>
@@ -182,11 +172,8 @@
       <div class="lp-grid">
         {{ range .Params.supermarkets }}
         <div class="lp-card">
-          <div class="lp-card-image">
-            <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
-          </div>
           <div class="lp-card-body">
-            <h4>{{ .name }}</h4>
+            <h4>{{ if .website }}<a href="{{ .website }}" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</h4>
             <p>{{ .description }}</p>
           </div>
         </div>
@@ -201,11 +188,8 @@
       <div class="lp-grid">
         {{ range .Params.other }}
         <div class="lp-card">
-          <div class="lp-card-image">
-            <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
-          </div>
           <div class="lp-card-body">
-            <h4>{{ .name }}</h4>
+            <h4>{{ if .website }}<a href="{{ .website }}" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</h4>
             <p>{{ .description }}</p>
           </div>
         </div>

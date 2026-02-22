@@ -614,94 +614,82 @@ h1, h2, h3, h4, h5, h6 {
   padding: var(--space-xl) 0;
 }
 
+.sales-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
 .master-plan {
-  margin-bottom: var(--space-xl);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-md));
 }
 
 .master-plan img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
-.lots-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-md);
+.lots-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-.lot-card {
-  background: var(--color-white);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  transition: all var(--transition);
-}
-
-.lot-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
-}
-
-.lot-card-image {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-
-.lot-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.lot-badge {
-  position: absolute;
-  top: var(--space-sm);
-  left: var(--space-sm);
-  background: var(--color-ocean);
-  color: var(--color-white);
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-.lot-card-body {
-  padding: 1.25rem;
-}
-
-.lot-card-body h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.lot-description {
-  color: var(--color-text-light);
-  font-size: 0.9rem;
-  margin-bottom: var(--space-sm);
-}
-
-.lot-details {
+.lot-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: var(--space-sm);
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  transition: background var(--transition);
+}
+
+.lot-row:first-child {
   border-top: 1px solid var(--color-border);
 }
 
-.lot-detail {
-  font-size: 0.85rem;
-  color: var(--color-text-light);
+.lot-row:hover {
+  background: var(--color-sand);
+}
+
+.lot-number {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-ocean);
+}
+
+.lot-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.lot-phone {
+  font-size: 0.9rem;
+  color: var(--color-ocean);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.lot-phone:hover {
+  color: var(--color-teal);
+  text-decoration: underline;
 }
 
 .lot-price {
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--color-ocean);
+  min-width: 120px;
+  text-align: right;
 }
 
 /* --- La Pedrera Section --- */
@@ -745,19 +733,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
-.lp-card-image {
-  width: 140px;
-  min-height: 120px;
-  flex-shrink: 0;
-  overflow: hidden;
-}
-
-.lp-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .lp-card-body {
   padding: 1rem 1.25rem;
   display: flex;
@@ -765,11 +740,22 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
-.lp-card-body h3 {
+.lp-card-body h4 {
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
   font-family: var(--font-body);
   font-weight: 600;
+}
+
+.lp-card-body h4 a {
+  color: var(--color-ocean);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.lp-card-body h4 a:hover {
+  color: var(--color-teal);
+  text-decoration: underline;
 }
 
 .lp-card-body p {
@@ -869,8 +855,8 @@ h1, h2, h3, h4, h5, h6 {
     gap: var(--space-sm);
   }
 
-  .lots-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .sales-layout {
+    gap: var(--space-md);
   }
 
   .amenity-row {
@@ -970,16 +956,16 @@ h1, h2, h3, h4, h5, h6 {
     height: 250px;
   }
 
-  .lots-grid {
+  .sales-layout {
     grid-template-columns: 1fr;
+  }
+
+  .master-plan {
+    position: static;
   }
 
   .lp-grid {
     grid-template-columns: 1fr;
-  }
-
-  .lp-card {
-    flex-direction: row;
   }
 
   .footer-inner {
@@ -1028,15 +1014,6 @@ h1, h2, h3, h4, h5, h6 {
 
   .house-card-body h3 {
     font-size: 1.25rem;
-  }
-
-  .lp-card {
-    flex-direction: column;
-  }
-
-  .lp-card-image {
-    width: 100%;
-    height: 150px;
   }
 
   .amenity-content h2 {
