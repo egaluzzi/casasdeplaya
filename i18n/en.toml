@@ -2,7 +2,7 @@
 other = "Home"
 
 [nav_amenities]
-other = "Amenities"
+other = "Activities"
 
 [nav_rent]
 other = "Rent"
@@ -23,10 +23,10 @@ other = "Houses for Rent"
 other = "Discover our beachfront houses available for rental"
 
 [amenities_title]
-other = "Amenities"
+other = "Activities"
 
 [amenities_subtitle]
-other = "Everything you need for the ultimate beach experience"
+other = "Nature, sport, and fun just steps from your door"
 
 [sales_title]
 other = "Lots for Sale"

@@ -2,7 +2,7 @@
 other = "Início"
 
 [nav_amenities]
-other = "Comodidades"
+other = "Atividades"
 
 [nav_rent]
 other = "Aluguel"
@@ -23,10 +23,10 @@ other = "Casas para Alugar"
 other = "Descubra nossas casas disponíveis para aluguel na praia"
 
 [amenities_title]
-other = "Comodidades"
+other = "Atividades"
 
 [amenities_subtitle]
-other = "Tudo o que você precisa para aproveitar ao máximo"
+other = "Natureza, esporte e diversão a poucos passos da sua porta"
 
 [sales_title]
 other = "Terrenos à Venda"
