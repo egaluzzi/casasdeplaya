@@ -85,9 +85,6 @@ amenities:
     image: "/images/activities/juegos.jpg"
     description: "Los más chicos tienen su propio rincón de aventuras: juegos al aire libre rodeados de verde, donde las risas y la imaginación no tienen límites. Mientras ellos juegan seguros y felices, vos te sentás a tomar un café o leer un libro a metros de distancia, con el sonido del mar de fondo."
 lots:
-  - number: 2
-    price: "600,000"
-    phone: "+54 9 11 4445-4972"
   - number: 8
     price: "220,000"
     phone: "+54 9 11 4413-8044"

@@ -673,14 +673,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .lot-phone {
   font-size: 0.9rem;
-  color: var(--color-ocean);
+  color: #25D366;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   transition: color var(--transition);
 }
 
 .lot-phone:hover {
-  color: var(--color-teal);
-  text-decoration: underline;
+  color: #1da851;
 }
 
 .lot-price {

@@ -85,9 +85,6 @@ amenities:
     image: "/images/activities/juegos.jpg"
     description: "Little ones have their own corner of adventure: outdoor play equipment surrounded by greenery, where laughter and imagination know no bounds. While they play safe and happy, you can sit just a few steps away with a coffee or a book, the sound of the sea your only soundtrack."
 lots:
-  - number: 2
-    price: "600,000"
-    phone: "+54 9 11 4445-4972"
   - number: 8
     price: "220,000"
     phone: "+54 9 11 4413-8044"

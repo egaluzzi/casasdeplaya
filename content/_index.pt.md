@@ -85,9 +85,6 @@ amenities:
     image: "/images/activities/juegos.jpg"
     description: "Enquanto os adultos relaxam, as crianças vivem a sua própria aventura: balanços, escorregadores e um espaço seguro dentro do condomínio onde se divertem ao ar livre, fazem novos amigos e criam memórias de verão que levarão para sempre."
 lots:
-  - number: 2
-    price: "600,000"
-    phone: "+54 9 11 4445-4972"
   - number: 8
     price: "220,000"
     phone: "+54 9 11 4413-8044"
