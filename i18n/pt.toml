@@ -14,7 +14,16 @@ other = "Vendas"
 other = "La Pedrera"
 
 [hero_tagline]
-other = "Seu refúgio à beira-mar em La Pedrera, Uruguai"
+other = "Férias em família à beira-mar em La Pedrera"
+
+[hero_subtitle]
+other = "Um condomínio fechado pensado para famílias — surf, tênis, praias infinitas e a calma que você procura, a minutos caminhando da La Principal."
+
+[location_title]
+other = "Localização"
+
+[location_subtitle]
+other = "La Pedrera, Rocha, Uruguai"
 
 [rent_title]
 other = "Casas para Alugar"
@@ -78,6 +87,9 @@ other = "Todos os direitos reservados"
 
 [footer_location]
 other = "La Pedrera, Rocha, Uruguai"
+
+[nav_location]
+other = "Localização"
 
 [restaurants]
 other = "Restaurantes"

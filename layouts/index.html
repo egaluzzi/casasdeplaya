@@ -27,6 +27,7 @@
 <section class="tagline-section">
   <div class="container">
     <h1 class="tagline">{{ i18n "hero_tagline" }}</h1>
+    <p class="tagline-sub">{{ i18n "hero_subtitle" }}</p>
   </div>
 </section>
 
@@ -198,6 +199,19 @@
     </div>
     {{ end }}
 
+  </div>
+</section>
+
+<!-- Location -->
+<section class="location-section" id="ubicacion">
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ i18n "location_title" }}</h2>
+      <p class="section-subtitle">{{ i18n "location_subtitle" }}</p>
+    </div>
+    <div class="location-map">
+      <iframe src="https://maps.google.com/maps?q=-34.59558,-54.130128&z=15&t=k&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
 </section>
 

@@ -14,7 +14,16 @@ other = "Sales"
 other = "La Pedrera"
 
 [hero_tagline]
-other = "Your beachfront retreat in La Pedrera, Uruguay"
+other = "Your family beach getaway in La Pedrera"
+
+[hero_subtitle]
+other = "A gated community made for families — surf, tennis, endless beaches, and the peace you've been looking for, all within walking distance of Main Street."
+
+[location_title]
+other = "Location"
+
+[location_subtitle]
+other = "La Pedrera, Rocha, Uruguay"
 
 [rent_title]
 other = "Houses for Rent"
@@ -78,6 +87,9 @@ other = "All rights reserved"
 
 [footer_location]
 other = "La Pedrera, Rocha, Uruguay"
+
+[nav_location]
+other = "Location"
 
 [restaurants]
 other = "Restaurants"

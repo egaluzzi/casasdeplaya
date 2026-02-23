@@ -14,7 +14,16 @@ other = "Ventas"
 other = "La Pedrera"
 
 [hero_tagline]
-other = "Tu refugio frente al mar en La Pedrera, Uruguay"
+other = "Vacaciones en familia frente al mar en La Pedrera"
+
+[hero_subtitle]
+other = "Un barrio privado pensado para familias — surf, tenis, playas infinitas y la calma que buscás, a minutos caminando de La Principal."
+
+[location_title]
+other = "Ubicación"
+
+[location_subtitle]
+other = "La Pedrera, Rocha, Uruguay"
 
 [rent_title]
 other = "Casas en Alquiler"
@@ -78,6 +87,9 @@ other = "Todos los derechos reservados"
 
 [footer_location]
 other = "La Pedrera, Rocha, Uruguay"
+
+[nav_location]
+other = "Ubicación"
 
 [restaurants]
 other = "Restaurantes"
